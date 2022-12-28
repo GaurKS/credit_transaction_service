@@ -1,0 +1,279 @@
+{
+	"info": {
+		"_postman_id": "8feb9aba-6242-4787-89f0-a63d36a5d67a",
+		"name": "Credit_transaction_service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17353116"
+	},
+	"item": [
+		{
+			"name": "ping/test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/ping/test",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ping",
+						"test"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sample response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/ping/test",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ping",
+								"test"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "63"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3f-6VbM5aAqOtB7H0chIHyonbmygT4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 28 Dec 2022 12:22:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"success\",\n    \"data\": \"Server is up and running ...🚀🚀\"\n}"
+				}
+			]
+		},
+		{
+			"name": "local/upload/csv",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "csv",
+							"type": "file",
+							"src": "/C:/Users/Admin/Desktop/dum.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/local/upload/csv",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"local",
+						"upload",
+						"csv"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sample response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "csv",
+									"type": "file",
+									"src": "/C:/Users/Admin/Desktop/dum.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/local/upload/csv",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"local",
+								"upload",
+								"csv"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "303"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"12f-GkZrgakgAHpqFBY0bwt33MT4+zc\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 28 Dec 2022 12:23:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 201,\n    \"outputFileName\": \"1672230188528.csv\",\n    \"result\": {\n        \"C231^11/2022\": {\n            \"min\": 616,\n            \"max\": 43444,\n            \"month\": \"11/2022\",\n            \"currBalance\": 40000\n        },\n        \"C865^11/2022\": {\n            \"min\": -2441,\n            \"max\": 40013,\n            \"month\": \"11/2022\",\n            \"currBalance\": 21337\n        },\n        \"C409^11/2022\": {\n            \"min\": -47654,\n            \"max\": -1878,\n            \"month\": \"11/2022\",\n            \"currBalance\": -46118\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "cloud/upload/csv",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "csv",
+							"type": "file",
+							"src": "/C:/Users/Admin/Desktop/test.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/cloud/upload/csv",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cloud",
+						"upload",
+						"csv"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sample response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "csv",
+									"type": "file",
+									"src": "/C:/Users/Admin/Desktop/test.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/cloud/upload/csv",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"cloud",
+								"upload",
+								"csv"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "616"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"268-gEM+l4dE4Rp1b12/pnciyh/Hsk8\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 28 Dec 2022 12:24:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 201,\n    \"outputFileName\": \"1672230259864.csv\",\n    \"url\": \"https://storage.googleapis.com/policymanager-34a0a.appspot.com/1672230259864.csv?GoogleAccessId=firebase-adminsdk-byply%40policymanager-34a0a.iam.gserviceaccount.com&Expires=16446997800&Signature=dhJSz5kkAkNmihWzTdw7eD3%2BhgXWPQtUKpm2cdIb6qHE1QgHBQV8Qqk16pvzPE9l7FeVxI92xuD54p93Eushp4lnMuNdmAATfTYaXFxxU6sMiJ8qxHPsJVesoXFRDAf7GpWMZ1TFjAEmKBIExIqGt0GzwfO8wTVNeZciZZ0WZb9wLuSQ3WSZ90hqgR6xZHsFOHr4ijEtldE7BiI26H49AMo48OypATOix6s1vqtA%2FfBrBSNnshjU5Fe3ZSlhXfg74j1wo%2FfzZsPEHFgdL9hkYjSYZ9kIarmveeqmHIaeBOOUUOrgMUdviN16NkQMgmzvZnyZdXTCVAQlhV5GdUq%2Fmg%3D%3D\"\n}"
+				}
+			]
+		}
+	]
+}
