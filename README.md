@@ -63,3 +63,6 @@ POST: `localhost:8000/api/local/upload/csv`
 POST: `localhost:8000/api/cloud/upload/csv`
 
 Details related to application endpoints, request body and sample response can be found in [this Postman Collection](https://api.postman.com/collections/17353116-8feb9aba-6242-4787-89f0-a63d36a5d67a?access_key=PMAT-01GNCB5CR000T63FSSX273MWAY).
+
+## References
+[Refer here](https://firebase.google.com/docs/admin/setup#add_firebase_to_your_app:~:text=To%20generate%20a,containing%20the%20key.) to setup a new google firebase project and generate `serviceAccountKey.json `.
