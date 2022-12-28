@@ -51,7 +51,7 @@ GCS_STORAGE_URL='<gc_project_url>.appspot.com'
 npm run start
 ```
 
--   Navigate to  `http://localhost:8000`
+-   Navigate to  `http://localhost:8000`.
 
 
 ## API endpoints
